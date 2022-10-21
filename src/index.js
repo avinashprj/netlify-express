@@ -8,5 +8,3 @@ app.use("/", api);
 app.listen(port, () => {
   console.log("server started on port " + port);
 });
-
-export const handler = serverless(app);
