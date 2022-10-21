@@ -13,7 +13,7 @@ router.route("/").get(async (req, res) => {
   }
 });
 
-app.use(`/.netlify/functions/products`, router);
+app.use(`/.netlify/functions/cart`, router);
 
 export default app;
 export const handler = serverless(app);
