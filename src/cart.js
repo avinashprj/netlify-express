@@ -1,6 +1,7 @@
 import express from "express";
 const app = express();
 const router = express.Router();
+import serverless from "serverless-http";
 
 router.route("/").get(async (req, res) => {
   try {
