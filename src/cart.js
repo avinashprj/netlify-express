@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 const router = express.Router();
 import serverless from "serverless-http";
+app.use(express.json());
 
 router.route("/").get(async (req, res) => {
   try {
